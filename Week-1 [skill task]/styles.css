@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 .container{
     height: 600px;
     width: 100%;
-    background-color: #E0E5B6;
     margin: 0;
-    position: relative;
 }
 
 .logo {
@@ -15,36 +15,35 @@
 #heading {
     width: 100%;
     text-align: center;
+    margin: 20px auto;
     padding: 30px 0;
     font-size: 50px;
-    background-color: hsl(0, 0%, 0%);
-    color: white;
+    color: #F5F7F8;
+    background-color: #667BC6;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 .carousel-inner{
+    margin-top: 10px;
     height: 600px;
-    position: absolute;
+    background-color: #bbc6fa;
 }
 
 .carousel-item {
-    margin-top: 160px;
-}
-
-#slider{
-    height: 800px;
-    margin-top: 20px;
-    background-color: black;
+    margin-top: 40px;
 }
 
 .quote {
     text-align: center;
     margin: auto;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 .author{
     margin-top: 30px;
     text-align: right;
     width: 87%;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 #randomQuote{
