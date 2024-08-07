@@ -25,18 +25,19 @@
 
 .carousel-inner{
     margin-top: 10px;
-    height: 600px;
+    height: 810px;
     background-color: #bbc6fa;
 }
 
 .carousel-item {
-    margin-top: 40px;
+    margin-top: 190px;
 }
 
 .quote {
     text-align: center;
     margin: auto;
     font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
 }
 
 .author{
@@ -44,6 +45,7 @@
     text-align: right;
     width: 87%;
     font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
 }
 
 #randomQuote{
