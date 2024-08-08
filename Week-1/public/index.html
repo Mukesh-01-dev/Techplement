@@ -267,22 +267,22 @@
       </div>
     </div>
     
-    <div class="container-lg border border-black border-3 rounded-4" id="searchByAuthor">
+    <!-- <div class="container-lg border border-black border-3 rounded-4" id="searchByAuthor">
       <h1 id="headerAuthor">Search By Author Name</h1>
       <div class="form">
         <form class="d-flex" role="search" id="authorForm">
-          <input class="form-control me-2" id="authorName" type="search" placeholder="Search by Author name" aria-label="Search">
-          <button class="btn btn-dark" id="authorBtn" type="submit">Search</button>
+          <input class="form-control me-2" id="authorName" type="textarea" placeholder="Search by Author name" aria-label="Search">
+          <button class="btn btn-dark" id="authorBtn" type="submit" onclick='searchAuthor()'>Search</button>
         </form>
       </div>
       <div id="authorContainer">
         <h1 class="w-75 quote" id="authorQuote">Quote of the Author</h1>
-        <p class="author">--Author Name.</p>
+        <p class="author" id="authorAuthor">--Author Name.</p>
       </div>
       <div id="authorQuoteGrp" class="btn-group" role="group" aria-label="Basic outlined example">
         <button type="button" class="btn btn-info" id="copyQuoteBtn" onclick="copyAuthorQuote()">Copy Quote</button>
       </div>
-    </div>
+    </div> -->
     <!-- Bootstap Js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -1565,6 +1565,7 @@
 
       const randomquote = document.getElementById('randomQuote');
       const randomAuthor = document.getElementById('randomAuthor');
+  
       function randomQuote() {
         let index = Math.floor(Math.random()*quotes.length);
         randomquote.innerHTML = quotes[index].quote;
@@ -1576,12 +1577,24 @@
         navigator.clipboard.writeText(randomquote.innerHTML + "--" + randomAuthor.innerHTML);
       }
 
-      function copyAuthorQuote() {
-        const copyText = document.getElementById("authorQuote").innerHTML;
-        navigator.clipboard.writeText(authorQuote.innerHTML);
-      }
+      // function copyAuthorQuote() {
+      //   const copyText = document.getElementById("authorQuote").innerHTML;
+      //   navigator.clipboard.writeText(authorQuote.innerHTML);
+      // }
 
-      
+      // const authorNameInput = document.getElementById("authorName");
+      // const authorQuote = document.getElementById("authorQuote");
+      // const authorAuthor = document.getElementById("authorAuthor");
+      // function searchAuthor() {
+      //   for (let q of quotes) {
+      //     if (q.author == authorNameInput.value.toString()) {
+      //       authorQuote.innerHTML = q.quote;
+      //       authorAuthor.innerHTML = q.author;
+      //     } else {
+      //       authorQuote.innerHTML = "Author not found (or) Type error"
+      //     }
+      //   }
+      // }
     </script>
 </body>
 </html>
