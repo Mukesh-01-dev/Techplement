@@ -1,4 +1,5 @@
 
+
 let quotes=[
 
   'The best thing about a boolean is even if you are wrong, you are only off by a bit. (Anonymous)',
@@ -39,3 +40,7 @@ function displayQuote(){
 }
 
 displayQuote();
+
+function searchByAuthorName(name) {
+  
+}
